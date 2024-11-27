@@ -1,0 +1,128 @@
+/* CSS */
+#questionArea 
+{
+	/*width: 100%;*/
+	/*padding: 12px;
+	 box-sizing: border-box;*/
+	 height: 100%;
+}
+
+#question 
+{
+	display: block;
+	margin-bottom: 12px;
+	height: 24px;
+	padding: 6px 0 6px 12px;
+	width: calc(100% - 12px);
+	background: #efefef;
+	border: none;
+	color: #808080;
+}
+#btnArea,
+#btnArea2
+{
+	display: flex;
+	width:100%;
+	margin-bottom: 6px;
+}
+#btnArea button,
+#btnArea2 button,
+#btnArea2 .btnTooltip 
+{
+    flex: 1; 
+	height: 36px;
+	text-transform: uppercase;
+}
+#btnArea #btn
+{
+	
+	background: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+#btnArea #stopBTN
+{
+	background: transparent;
+    color: #808080;
+    border: 1px solid #808080;
+    border-radius: 3px;
+	font-weight: bold;
+	
+}
+
+#btnArea2 #clearBTN
+{
+	border-radius: 3px;
+	font-weight: bold;
+	 border: none;
+	background: #ffdfdf;
+	
+}
+
+#btnArea2 #copyBTN
+{
+	border-radius: 3px;
+	font-weight: bold;
+	 border: none;
+	background: #d4ffe1;
+	width: 100%;
+	margin-right: 6px;
+}
+
+#GPTAnswear
+{
+	display: block;
+	margin-bottom: 12px;
+	padding: 6px;
+	height: 260px;
+	/*border: 1px solid #767676; */
+	border-radius: 3px;
+	background: #efefef;
+	border: none;
+	overflow: auto;
+}
+
+
+#btnArea2 .btnTooltip {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+#btnArea2 .btnTooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#btnArea2 .btnTooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#btnArea2 .btnTooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
